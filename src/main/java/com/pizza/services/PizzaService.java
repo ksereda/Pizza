@@ -10,13 +10,9 @@ public interface PizzaService {
 
     void addPizza(Pizza pizza);
 
-//    List<Pizza> findByTopicId(Integer topicId);
-
     Pizza findByPizzaName(String pizzaName);
 
     void deletePizza(Pizza pizza);
-
-//    Pizza findByName(String name);
 
     void updatePizza(Pizza pizza);
 }
