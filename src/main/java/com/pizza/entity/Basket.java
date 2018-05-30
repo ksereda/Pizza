@@ -9,7 +9,7 @@ public class Basket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "basket_id")
-    private Long id;
+    private int id;
 
     @Column(name = "quantity")
     private int quantity;
@@ -21,11 +21,11 @@ public class Basket {
     public Basket() {
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -37,6 +37,13 @@ public class Basket {
         this.quantity = quantity;
     }
 
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
 }
 
    

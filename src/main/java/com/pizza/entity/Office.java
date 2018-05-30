@@ -9,7 +9,7 @@ public class Office {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "office_id")
-    private long id;
+    private int id;
 
     @Column(name = "office_address")
     private String address;
@@ -23,11 +23,11 @@ public class Office {
     public Office() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
