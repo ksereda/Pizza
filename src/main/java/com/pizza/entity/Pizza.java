@@ -9,7 +9,7 @@ public class Pizza {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "pizza_id")
-    private long id;
+    private int id;
 
     @Column(name = "pizza_name")
     private String name;
@@ -17,11 +17,11 @@ public class Pizza {
     public Pizza() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
