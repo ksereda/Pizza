@@ -2,6 +2,7 @@ package com.pizza.services.impl;
 
 import com.pizza.entity.Role;
 import com.pizza.entity.User;
+import com.pizza.repository.UserRepository;
 import com.pizza.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
