@@ -6,6 +6,8 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "orders")
 public class Order {
 
     @Id
@@ -22,14 +24,14 @@ public class Order {
     @Column(name = "user_id")
     private Long userId;
 
-    @Column(name = "delivery_address")
-    private String deliveryAddress;
-
-    @Column(name = "order_comment")
-    private String comment;
-
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Basket> basketList = new ArrayList<>();
+
+    @Column(name = "product_id")
+    private long productId;
+
+    @Column(name = "office_id")
+    private long officeId;
 
     public Order() {
     }
@@ -66,27 +68,27 @@ public class Order {
         this.userId = userId;
     }
 
-    public String getDeliveryAddress() {
-        return deliveryAddress;
-    }
-
-    public void setDeliveryAddress(String deliveryAddress) {
-        this.deliveryAddress = deliveryAddress;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
     public List<Basket> getBasketList() {
         return basketList;
     }
 
     public void setBasketList(List<Basket> basketList) {
         this.basketList = basketList;
+    }
+
+    public long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(long productId) {
+        this.productId = productId;
+    }
+
+    public long getOfficeId() {
+        return officeId;
+    }
+
+    public void setOfficeId(long officeId) {
+        this.officeId = officeId;
     }
 }

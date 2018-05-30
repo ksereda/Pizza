@@ -3,12 +3,12 @@ package com.pizza.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "office")
+@Table(name = "offices")
 public class Office {
-    
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "office_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column(name = "office_address")

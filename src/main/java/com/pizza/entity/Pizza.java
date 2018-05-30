@@ -1,15 +1,13 @@
 package com.pizza.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "pizza")
+@Table(name = "pizzas")
 public class Pizza {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "pizza_id")
     private long id;
 

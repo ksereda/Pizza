@@ -3,19 +3,20 @@ package com.pizza.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "basket")
+@Table(name = "baskets")
 public class Basket {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "unit_id")
+    @Column(name = "basket_id")
     private Long id;
 
     @Column(name = "quantity")
     private int quantity;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
-    private int order;
+    @Column(name = "order_id")
+    private int orderId;
 
     public Basket() {
     }
@@ -36,13 +37,6 @@ public class Basket {
         this.quantity = quantity;
     }
 
-    public int getOrder() {
-        return order;
-    }
-
-    public void setOrder(int order) {
-        this.order = order;
-    }
 }
 
    
