@@ -94,8 +94,8 @@ CREATE TABLE `baskets` (
 
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
-  `order_date` datetime DEFAULT NULL,
-  `order_time` datetime DEFAULT NULL,
+  `order_date` varchar(11) DEFAULT NULL,
+  `order_time` varchar(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   `product_id` int(11) DEFAULT NULL,
   `office_id` int(11) DEFAULT NULL,
@@ -107,3 +107,5 @@ CREATE TABLE `orders` (
   CONSTRAINT `product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
