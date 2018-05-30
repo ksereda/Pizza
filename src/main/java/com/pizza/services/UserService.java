@@ -1,7 +1,7 @@
-package com.JavaTests.services;
+package com.pizza.services;
 
-import com.JavaTests.entity.Role;
-import com.JavaTests.entity.User;
+import com.pizza.entity.Role;
+import com.pizza.entity.User;
 
 import java.util.List;
 
@@ -13,15 +13,9 @@ public interface UserService {
 
     User findByLogin(String userLogin);
 
-    User findById (int id);
+    User findById(int id);
 
     void saveUser(User user);
-
-    Role getTutorRole();
-
-    Role getAdminRole();
-
-    Role getUserRole();
 
     void save(User user);
 }
