@@ -2,6 +2,7 @@ package com.pizza.services.impl;
 
 import com.pizza.entity.Role;
 import com.pizza.entity.User;
+import com.pizza.repository.RoleRepository;
 import com.pizza.repository.UserRepository;
 import com.pizza.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ import java.util.List;
 @Transactional
 public class UserServiceImpl implements UserService {
 
-
     @Autowired
     private UserRepository userRepository;
 
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getUsers() {
-        Role role = roleRepository.findByUser(1);
+        Role role = roleRepository.findByCustomer(1);
         List <User> userList = userRepository.findAllByRole(role);
         return userList;
     }
@@ -43,20 +43,20 @@ public class UserServiceImpl implements UserService {
         return userList;
     }
 
-    @Override
-    public Role getTutorRole() {
-        return roleRepository.findByTutor(1);
-    }
-
-    @Override
-    public Role getAdminRole() {
-        return roleRepository.findByAdmin(1);
-    }
-
-    @Override
-    public Role getUserRole() {
-        return roleRepository.findByUser(1);
-    }
+//    @Override
+//    public Role getTutorRole() {
+//        return roleRepository.findByTutor(1);
+//    }
+//
+//    @Override
+//    public Role getAdminRole() {
+//        return roleRepository.findByAdmin(1);
+//    }
+//
+//    @Override
+//    public Role getUserRole() {
+//        return roleRepository.findByCustomer(1);
+//    }
 
     @Override
     public User findByLogin(String userLogin) {
@@ -75,7 +75,7 @@ public class UserServiceImpl implements UserService {
 
     public void save(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        Role role = roleRepository.findByUser(1);
+        Role role = roleRepository.findByCustomer(1);
         user.setRole(role);
         userRepository.save(user);
     }
