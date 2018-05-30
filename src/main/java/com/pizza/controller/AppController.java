@@ -1,5 +1,8 @@
 package com.pizza.controller;
 
+import com.pizza.entity.User;
+import com.pizza.services.UserService;
+import com.pizza.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;

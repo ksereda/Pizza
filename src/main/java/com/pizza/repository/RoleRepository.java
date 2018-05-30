@@ -9,6 +9,6 @@ public interface RoleRepository extends CrudRepository<Role, Integer> {
 
     Role findByCustomer(Integer customer);
 
-    Role findByTutor(Integer tutor);
+    Role findByExecutor(Integer executor);
 
 }

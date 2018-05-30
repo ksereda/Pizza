@@ -43,20 +43,20 @@ public class UserServiceImpl implements UserService {
         return userList;
     }
 
-//    @Override
-//    public Role getTutorRole() {
-//        return roleRepository.findByTutor(1);
-//    }
-//
-//    @Override
-//    public Role getAdminRole() {
-//        return roleRepository.findByAdmin(1);
-//    }
-//
-//    @Override
-//    public Role getUserRole() {
-//        return roleRepository.findByCustomer(1);
-//    }
+    @Override
+    public Role getExecutorRole() {
+        return roleRepository.findByExecutor(1);
+    }
+
+    @Override
+    public Role getAdminRole() {
+        return roleRepository.findByAdmin(1);
+    }
+
+    @Override
+    public Role getCustomerRole() {
+        return roleRepository.findByCustomer(1);
+    }
 
     @Override
     public User findByLogin(String userLogin) {

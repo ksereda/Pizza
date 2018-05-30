@@ -18,4 +18,10 @@ public interface UserService {
     void saveUser(User user);
 
     void save(User user);
+
+    Role getExecutorRole();
+
+    Role getAdminRole();
+
+    Role getCustomerRole();
 }
