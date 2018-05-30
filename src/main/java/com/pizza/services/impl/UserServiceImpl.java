@@ -1,10 +1,8 @@
-package com.JavaTests.services.impl;
+package com.pizza.services.impl;
 
-import com.JavaTests.entity.Role;
-import com.JavaTests.entity.User;
-import com.JavaTests.repository.RoleRepository;
-import com.JavaTests.repository.UserRepository;
-import com.JavaTests.services.UserService;
+import com.pizza.entity.Role;
+import com.pizza.entity.User;
+import com.pizza.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
