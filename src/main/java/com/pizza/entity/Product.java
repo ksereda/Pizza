@@ -10,7 +10,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
-    private long id;
+    private int id;
 
     private List<Pizza> pizzas;
     private List<Beverage> beverages;
@@ -20,11 +20,44 @@ public class Product {
     public Product() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
+
+    public List<Pizza> getPizzas() {
+        return pizzas;
+    }
+
+    public void setPizzas(List<Pizza> pizzas) {
+        this.pizzas = pizzas;
+    }
+
+    public List<Beverage> getBeverages() {
+        return beverages;
+    }
+
+    public void setBeverages(List<Beverage> beverages) {
+        this.beverages = beverages;
+    }
+
+    public List<Souse> getSouses() {
+        return souses;
+    }
+
+    public void setSouses(List<Souse> souses) {
+        this.souses = souses;
+    }
+
+    public List<Sushi> getSushis() {
+        return sushis;
+    }
+
+    public void setSushis(List<Sushi> sushis) {
+        this.sushis = sushis;
+    }
+
 }

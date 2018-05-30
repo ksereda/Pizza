@@ -13,7 +13,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")
-    private Long id;
+    private int id;
 
     @Column(name = "order_date")
     private Date orderDate;
@@ -36,11 +36,11 @@ public class Order {
     public Order() {
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
