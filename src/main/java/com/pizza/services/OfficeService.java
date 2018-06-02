@@ -1,7 +1,6 @@
-package com.pizza.services;
+package com.Pizza.services;
 
-import com.pizza.entity.Office;
-
+import com.Pizza.entity.Office;
 import java.util.List;
 
 public interface OfficeService {

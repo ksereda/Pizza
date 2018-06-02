@@ -1,7 +1,6 @@
-package com.pizza.services;
+package com.Pizza.services;
 
-import com.pizza.entity.Beverage;
-
+import com.Pizza.entity.Beverage;
 import java.util.List;
 
 public interface BeverageService {

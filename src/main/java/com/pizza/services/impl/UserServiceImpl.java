@@ -1,10 +1,10 @@
-package com.pizza.services.impl;
+package com.Pizza.services.impl;
 
-import com.pizza.entity.Role;
-import com.pizza.entity.User;
-import com.pizza.repository.RoleRepository;
-import com.pizza.repository.UserRepository;
-import com.pizza.services.UserService;
+import com.Pizza.entity.Role;
+import com.Pizza.entity.User;
+import com.Pizza.repository.RoleRepository;
+import com.Pizza.repository.UserRepository;
+import com.Pizza.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

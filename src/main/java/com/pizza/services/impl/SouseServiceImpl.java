@@ -1,8 +1,8 @@
-package com.pizza.services.impl;
+package com.Pizza.services.impl;
 
-import com.pizza.entity.Souse;
-import com.pizza.repository.SouseRepository;
-import com.pizza.services.SouseService;
+import com.Pizza.entity.Souse;
+import com.Pizza.repository.SouseRepository;
+import com.Pizza.services.SouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

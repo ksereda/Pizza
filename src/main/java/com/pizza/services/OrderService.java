@@ -1,7 +1,6 @@
-package com.pizza.services;
+package com.Pizza.services;
 
-import com.pizza.entity.Order;
-
+import com.Pizza.entity.Order;
 import java.util.List;
 
 public interface OrderService {

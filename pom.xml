@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.pizza</groupId>
-    <artifactId>Pizza</artifactId>
+    <artifactId>pizza</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -210,7 +210,7 @@
     </dependencies>
 
     <build>
-        <finalName>Pizza</finalName>
+        <finalName>pizza</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <plugins>

@@ -1,4 +1,4 @@
-package com.pizza.entity;
+package com.Pizza.entity;
 
 import javax.persistence.*;
 
@@ -9,13 +9,12 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
-    private Long id;
+    private int id;
 
-    @ManyToMany
-    @Column(name = "order_id")
+//    @OneToMany
+    @JoinColumn(name = "order_id")
     private Order order;
 
-    @ManyToOne
     @Column(name = "role_id")
     private Role role;
 
@@ -51,11 +50,11 @@ public class User {
         this.phone = phone;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

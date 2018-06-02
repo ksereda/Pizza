@@ -1,6 +1,6 @@
-package com.pizza.config;
+package com.Pizza.config;
 
-import com.pizza.config.application.WebConfig;
+import com.Pizza.config.application.WebConfig;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

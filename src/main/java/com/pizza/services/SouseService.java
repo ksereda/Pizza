@@ -1,7 +1,6 @@
-package com.pizza.services;
+package com.Pizza.services;
 
-import com.pizza.entity.Souse;
-
+import com.Pizza.entity.Souse;
 import java.util.List;
 
 public interface SouseService {

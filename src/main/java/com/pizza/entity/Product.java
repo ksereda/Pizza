@@ -1,4 +1,4 @@
-package com.pizza.entity;
+package com.Pizza.entity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -12,10 +12,22 @@ public class Product {
     @Column(name = "product_id")
     private int id;
 
-    private List<Pizza> pizzas;
-    private List<Beverage> beverages;
-    private List<Souse> souses;
-    private List<Sushi> sushis;
+//    private List<Pizza> pizzas;
+//    private List<Beverage> beverages;
+//    private List<Souse> souses;
+//    private List<Sushi> sushis;
+
+    @Column(name = "pizzas_id")
+    private int pizzaId;
+
+    @Column(name = "beverages_id")
+    private int beverageId;
+
+    @Column(name = "souses_id")
+    private int souseId;
+
+    @Column(name = "sushis_id")
+    private int sushiId;
 
     public Product() {
     }
@@ -28,36 +40,35 @@ public class Product {
         this.id = id;
     }
 
-    public List<Pizza> getPizzas() {
-        return pizzas;
+    public int getPizzaId() {
+        return pizzaId;
     }
 
-    public void setPizzas(List<Pizza> pizzas) {
-        this.pizzas = pizzas;
+    public void setPizzaId(int pizzaId) {
+        this.pizzaId = pizzaId;
     }
 
-    public List<Beverage> getBeverages() {
-        return beverages;
+    public int getBeverageId() {
+        return beverageId;
     }
 
-    public void setBeverages(List<Beverage> beverages) {
-        this.beverages = beverages;
+    public void setBeverageId(int beverageId) {
+        this.beverageId = beverageId;
     }
 
-    public List<Souse> getSouses() {
-        return souses;
+    public int getSouseId() {
+        return souseId;
     }
 
-    public void setSouses(List<Souse> souses) {
-        this.souses = souses;
+    public void setSouseId(int souseId) {
+        this.souseId = souseId;
     }
 
-    public List<Sushi> getSushis() {
-        return sushis;
+    public int getSushiId() {
+        return sushiId;
     }
 
-    public void setSushis(List<Sushi> sushis) {
-        this.sushis = sushis;
+    public void setSushiId(int sushiId) {
+        this.sushiId = sushiId;
     }
-
 }

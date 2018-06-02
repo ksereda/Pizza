@@ -1,8 +1,7 @@
-package com.pizza.services;
+package com.Pizza.services;
 
-import com.pizza.entity.Role;
-import com.pizza.entity.User;
-
+import com.Pizza.entity.Role;
+import com.Pizza.entity.User;
 import java.util.List;
 
 public interface UserService {

@@ -1,6 +1,6 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Souse;
+import com.Pizza.entity.Souse;
 import org.springframework.data.repository.CrudRepository;
 
 public interface SouseRepository extends CrudRepository<Souse, Integer> {

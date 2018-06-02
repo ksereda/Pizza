@@ -1,10 +1,8 @@
-package com.pizza.entity;
+package com.Pizza.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Time;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -21,17 +19,14 @@ public class Order {
     @Column(name = "order_time")
     private Time orderTime;
 
-    @Column(name = "user_id")
-    private Long userId;
-
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Basket> basketList = new ArrayList<>();
+//    @OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private List<Basket> basketList = new ArrayList<>();
 
     @Column(name = "product_id")
-    private long productId;
+    private int productId;
 
     @Column(name = "office_id")
-    private long officeId;
+    private int officeId;
 
     public Order() {
     }
@@ -60,35 +55,19 @@ public class Order {
         this.orderTime = orderTime;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public List<Basket> getBasketList() {
-        return basketList;
-    }
-
-    public void setBasketList(List<Basket> basketList) {
-        this.basketList = basketList;
-    }
-
-    public long getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(long productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
-    public long getOfficeId() {
+    public int getOfficeId() {
         return officeId;
     }
 
-    public void setOfficeId(long officeId) {
+    public void setOfficeId(int officeId) {
         this.officeId = officeId;
     }
 }

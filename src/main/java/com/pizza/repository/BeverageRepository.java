@@ -1,6 +1,7 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Beverage;
+
+import com.Pizza.entity.Beverage;
 import org.springframework.data.repository.CrudRepository;
 
 public interface BeverageRepository extends CrudRepository<Beverage, Integer> {

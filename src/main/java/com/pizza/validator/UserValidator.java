@@ -1,7 +1,7 @@
-package com.pizza.validator;
+package com.Pizza.validator;
 
-import com.pizza.entity.User;
-import com.pizza.services.UserService;
+import com.Pizza.entity.User;
+import com.Pizza.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;

@@ -31,15 +31,10 @@ INSERT INTO `pizza`.`offices` (`office_id`, `office_address`, `office_phone`, `o
 INSERT INTO `pizza`.`offices` (`office_id`, `office_address`, `office_phone`, `office_comment`) VALUES ('2', 'yl. Korolya 2', '54321', 'Posle 20:00');
 INSERT INTO `pizza`.`offices` (`office_id`, `office_address`, `office_phone`, `office_comment`) VALUES ('3', 'yl. Bobryiskaya 8', '4567894', 'Do 15:00');
 
-INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `user_id`, `product_id`, `office_id`) VALUES ('1', '15.02.2018', '15:00', '2', '2', '2');
-INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `user_id`, `product_id`, `office_id`) VALUES ('2', '28.05.2018', '10:49', '2', '1', '3');
-INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `user_id`, `product_id`, `office_id`) VALUES ('3', '20.04.2018', '22:30', '2', '3', '1');
-INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `user_id`, `product_id`, `office_id`) VALUES ('4', '15.02.2018', '13:05', '2', '1', '1');
-
-INSERT INTO `pizza`.`baskets` (`basket_id`, `quantity`, `order_id`) VALUES ('1', '2', '1');
-INSERT INTO `pizza`.`baskets` (`basket_id`, `quantity`, `order_id`) VALUES ('2', '3', '2');
-INSERT INTO `pizza`.`baskets` (`basket_id`, `quantity`, `order_id`) VALUES ('3', '1', '3');
-INSERT INTO `pizza`.`baskets` (`basket_id`, `quantity`, `order_id`) VALUES ('4', '1', '4');
+INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `product_id`, `office_id`) VALUES ('1', '15.02.2018', '15:00', '2', '2');
+INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `product_id`, `office_id`) VALUES ('2', '28.05.2018', '10:49', '1', '3');
+INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `product_id`, `office_id`) VALUES ('3', '20.04.2018', '22:30', '3', '1');
+INSERT INTO `pizza`.`orders` (`order_id`, `order_date`, `order_time`, `product_id`, `office_id`) VALUES ('4', '15.02.2018', '13:05', '1', '1');
 
 
 

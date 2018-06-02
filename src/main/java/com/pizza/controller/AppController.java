@@ -1,8 +1,8 @@
-package com.pizza.controller;
+package com.Pizza.controller;
 
-import com.pizza.entity.User;
-import com.pizza.services.UserService;
-import com.pizza.validator.UserValidator;
+import com.Pizza.entity.User;
+import com.Pizza.services.UserService;
+import com.Pizza.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -57,15 +57,15 @@ public class AppController {
         return "security/login";
     }
 
-    @RequestMapping(value = {"/", "/welcome", "/JavaTests"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/", "/welcome", "/Pizza"}, method = RequestMethod.GET)
     public String welcome(Model model) {
         Collection user = SecurityContextHolder.getContext().getAuthentication().getAuthorities();
         switch (user.toString()){
-            case "[ROLE_TUTOR]":
+            case "[ROLE_EXECUTOR]":
                 return "tutor/tutorMain";
             case "[ROLE_ADMIN]":
                 return "admin/adminHome";
-            case "[ROLE_USER]":
+            case "[ROLE_CUSTOMER]":
                 return "user/home";
             default:
                 return "security/login";

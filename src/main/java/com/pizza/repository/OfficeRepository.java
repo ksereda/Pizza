@@ -1,6 +1,6 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Office;
+import com.Pizza.entity.Office;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

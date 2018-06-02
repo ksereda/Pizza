@@ -4,10 +4,15 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/com/JavaTests/config/HibernateConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/com/JavaTests/config/application/WebConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/com/JavaTests/config/WebSecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/Pizza/config/HibernateConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/Pizza/config/application/WebConfig.java</file>
         </fileset>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map />
+        <naming-strategy-map />
       </configuration>
     </facet>
     <facet type="web" name="Web">
@@ -19,12 +24,6 @@
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
-      </configuration>
-    </facet>
-    <facet type="hibernate" name="Hibernate">
-      <configuration>
-        <datasource-map />
-        <naming-strategy-map />
       </configuration>
     </facet>
   </component>

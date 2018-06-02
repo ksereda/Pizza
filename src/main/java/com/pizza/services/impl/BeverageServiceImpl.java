@@ -1,8 +1,8 @@
-package com.pizza.services.impl;
+package com.Pizza.services.impl;
 
-import com.pizza.entity.Beverage;
-import com.pizza.repository.BeverageRepository;
-import com.pizza.services.BeverageService;
+import com.Pizza.entity.Beverage;
+import com.Pizza.repository.BeverageRepository;
+import com.Pizza.services.BeverageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

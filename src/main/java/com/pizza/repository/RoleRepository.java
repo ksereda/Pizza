@@ -1,6 +1,6 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Role;
+import com.Pizza.entity.Role;
 import org.springframework.data.repository.CrudRepository;
 
 public interface RoleRepository extends CrudRepository<Role, Integer> {

@@ -1,7 +1,7 @@
-package com.pizza.config;
-
-import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
-
-public class SpringSecurityInitializer extends AbstractSecurityWebApplicationInitializer {
-
-}
+//package com.Pizza.config;
+//
+//import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+//
+//public class SpringSecurityInitializer extends AbstractSecurityWebApplicationInitializer {
+//
+//}

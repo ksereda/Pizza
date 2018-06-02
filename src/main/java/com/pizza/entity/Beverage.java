@@ -1,4 +1,4 @@
-package com.pizza.entity;
+package com.Pizza.entity;
 
 import javax.persistence.*;
 

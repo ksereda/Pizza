@@ -1,4 +1,4 @@
-package com.pizza.entity;
+package com.Pizza.entity;
 
 import javax.persistence.*;
 
@@ -9,7 +9,7 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_id")
-    private long id;
+    private int id;
 
     @Column(name = "admin")
     private int admin;
@@ -29,11 +29,11 @@ public class Role {
         this.executor = executor;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -70,5 +70,4 @@ public class Role {
                 ", executor=" + executor +
                 '}';
     }
-
 }

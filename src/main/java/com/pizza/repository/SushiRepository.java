@@ -1,6 +1,6 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Sushi;
+import com.Pizza.entity.Sushi;
 import org.springframework.data.repository.CrudRepository;
 
 public interface SushiRepository extends CrudRepository<Sushi, Integer> {

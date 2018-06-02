@@ -14,7 +14,7 @@ public class Basket {
     @Column(name = "quantity")
     private int quantity;
 
-    @ManyToOne
+//    @ManyToOne
     @Column(name = "order_id")
     private int orderId;
 

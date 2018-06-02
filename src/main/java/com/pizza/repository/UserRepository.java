@@ -1,7 +1,7 @@
-package com.pizza.repository;
+package com.Pizza.repository;
 
-import com.pizza.entity.Role;
-import com.pizza.entity.User;
+import com.Pizza.entity.Role;
+import com.Pizza.entity.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
