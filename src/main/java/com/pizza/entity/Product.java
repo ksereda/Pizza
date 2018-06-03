@@ -22,19 +22,19 @@ public class Product {
 //    private List<Souse> souses;
 //    private List<Sushi> sushis;
 
-    @EmbeddedId
+    @Embedded
     @Column(name = "pizzas_id")
     private int pizzaId;
 
-    @EmbeddedId
+    @Embedded
     @Column(name = "beverages_id")
     private int beverageId;
 
-    @EmbeddedId
+    @Embedded
     @Column(name = "souses_id")
     private int souseId;
 
-    @EmbeddedId
+    @Embedded
     @Column(name = "sushis_id")
     private int sushiId;
 
