@@ -2,14 +2,13 @@ package com.Pizza.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
+import java.io.Serializable;
 
-@Entity
-@Table(name = "souses")
+@Embeddable
 @Getter
 @Setter
-public class Souse {
+public class Souse implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
