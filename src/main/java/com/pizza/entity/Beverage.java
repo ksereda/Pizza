@@ -1,9 +1,14 @@
 package com.Pizza.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "beverages")
+@Getter
+@Setter
 public class Beverage {
 
     @Id
@@ -14,22 +19,4 @@ public class Beverage {
     @Column(name = "beverage_name")
     private String name;
 
-    public Beverage() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

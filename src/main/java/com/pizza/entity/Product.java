@@ -1,10 +1,15 @@
 package com.Pizza.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Table(name = "products")
+@Getter
+@Setter
 public class Product {
 
     @Id
@@ -29,46 +34,4 @@ public class Product {
     @Column(name = "sushis_id")
     private int sushiId;
 
-    public Product() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getPizzaId() {
-        return pizzaId;
-    }
-
-    public void setPizzaId(int pizzaId) {
-        this.pizzaId = pizzaId;
-    }
-
-    public int getBeverageId() {
-        return beverageId;
-    }
-
-    public void setBeverageId(int beverageId) {
-        this.beverageId = beverageId;
-    }
-
-    public int getSouseId() {
-        return souseId;
-    }
-
-    public void setSouseId(int souseId) {
-        this.souseId = souseId;
-    }
-
-    public int getSushiId() {
-        return sushiId;
-    }
-
-    public void setSushiId(int sushiId) {
-        this.sushiId = sushiId;
-    }
 }
